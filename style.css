@@ -1,0 +1,208 @@
+*{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 80px;
+    background-image: linear-gradient(to right, black, rgb(27, 27, 27));
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h1{
+    font-size: 3rem;
+    color: white;
+    font-style: italic;
+    margin: 10px 15px;
+    padding: 10px 15px;
+}
+
+.navbar__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    text-decoration: none;
+    margin: 0 20px;
+    color:  white;
+    font-size: 120%;
+}
+
+.nav-button{
+    padding: 10px 20px;
+    color: black;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover{
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.navbar__icon{
+    display: none;
+    transform: scale(1.5);
+}
+
+.navbar__icon_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 19px;
+}
+
+
+.contact__container{
+    height: 70vh;
+    max-width: 800px;
+    margin: 70px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 50px;
+    box-shadow: 4px 7px rgb(31, 31, 31);
+}
+
+.contact-form{
+    width: 80%;
+    padding: 200px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form p{
+    font-size:300%;
+    font-weight: 900;
+}
+
+.section-contact{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.section-contact h1{
+    margin: 5px 15px;
+}
+
+.contact-input{
+    width: 100%;
+    border: none;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    padding: 10px 20px;
+    position: relative;
+    max-width: 90%;
+}
+
+.contact-submit{
+    margin: 20px 0;
+    transition: all 0.3s ease; 
+}
+
+.contact-submit:hover{
+    background-color: black;
+    color: white;
+}
+
+.navbar__toggle{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: black;
+    height: 95vh;
+    width: 30%;
+    padding: 0;
+    left: -900px;
+    transition: all 0.3s ease;
+
+}
+
+.toggle{
+    left: 0px;
+}
+
+.navtoggle-links{
+    display: flex;
+    flex-direction: column;
+    height:30vh;
+    position: relative;
+    justify-content: center;
+    top: 10px;
+    margin: 10vh 0;
+    padding: 10px 0;
+    font-size: 1.5em;
+    align-items: center;
+}
+
+.navtoggle-link{
+    text-decoration: none;
+    margin: 0 20px;
+    color:  white;
+    font-size: 120%;
+    margin: 30px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid white 2px ;
+}
+
+.navtoggle-btn{
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.navtoggle-btn:hover{
+    transform: scale(1.1);
+}
+
+
+
+@media only screen and (max-width:800px){
+
+    .navbar__menu{
+        display: none;
+    }
+
+    .navbar__icon{
+        display: block;
+    }
+
+    .contact__container{
+        border-style: none;
+        box-shadow: none;
+    }
+
+}
